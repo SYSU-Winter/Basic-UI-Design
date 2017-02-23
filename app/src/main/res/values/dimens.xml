@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_">20dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="textSize2">18sp</dimen>
+    <dimen name="interval">10dp</dimen>
+    <dimen name="button_horizontal">10dp</dimen>
+    <dimen name="button_vertical">5dp</dimen>
+</resources>

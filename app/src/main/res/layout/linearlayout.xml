@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/my_edittext_style"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_"
+        android:text="@string/title"
+        android:textSize="@dimen/textSize" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_"
+        android:src="@mipmap/sysu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_"
+        android:layout_marginRight="@dimen/margin_"
+        android:id="@+id/idx">
+
+        <TextView
+            android:id="@+id/ida"
+            style="@style/my_edittext_style"
+            android:layout_alignBaseline="@+id/idb"
+            android:textSize="@dimen/textSize2"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/idb"
+            android:layout_toEndOf="@id/ida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/idc"
+            android:layout_alignBaseline="@+id/idd"
+            android:layout_below="@id/ida"
+            android:layout_alignEnd="@+id/ida"
+            style="@style/my_edittext_style"
+            android:textSize="@dimen/textSize2"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/idd"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/idb"
+            android:layout_toEndOf="@+id/idc"
+            android:layout_alignStart="@+id/idb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint2"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/id0"
+        style="@style/my_edittext_style"
+        android:textSize="@dimen/textSize2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id1"
+            style="@style/my_edittext_style"
+            android:textSize="@dimen/textSize2"
+            android:layout_marginEnd="@dimen/interval"
+            android:checked="true"
+            android:text="@string/学生" />
+
+        <RadioButton
+            android:id="@+id/id2"
+            style="@style/my_edittext_style"
+            android:textSize="@dimen/textSize2"
+            android:layout_marginEnd="@dimen/interval"
+            android:text="@string/老师" />
+
+        <RadioButton
+            android:id="@+id/id3"
+            style="@style/my_edittext_style"
+            android:textSize="@dimen/textSize2"
+            android:layout_marginEnd="@dimen/interval"
+            android:text="@string/社团" />
+
+        <RadioButton
+            android:id="@+id/id4"
+            style="@style/my_edittext_style"
+            android:textSize="@dimen/textSize2"
+            android:text="@string/管理者" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/my_edittext_style"
+            android:textSize="@dimen/textSize2"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/interval"
+            android:background="@drawable/button"
+            android:paddingBottom="@dimen/button_vertical"
+            android:paddingLeft="@dimen/button_horizontal"
+            android:paddingRight="@dimen/button_horizontal"
+            android:paddingTop="@dimen/button_vertical"
+            android:text="@string/登录"
+            android:textColor="@color/colorWrite" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/my_edittext_style"
+            android:textSize="@dimen/textSize2"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:paddingBottom="@dimen/button_vertical"
+            android:paddingLeft="@dimen/button_horizontal"
+            android:paddingRight="@dimen/button_horizontal"
+            android:paddingTop="@dimen/button_vertical"
+            android:text="@string/注册"
+            android:textColor="@color/colorWrite" />
+
+    </LinearLayout>
+</LinearLayout>
